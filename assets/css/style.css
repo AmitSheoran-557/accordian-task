@@ -24,11 +24,22 @@
 .a-btn::after {
     background-image: url(/assets/images/chevron-down-solid.svg) !important;
     color: white;
-  }
+}
 
 .a-btn {
     color: white;
-  }
+}
+
+.a-btn-2::after {
+    background-image: url(/assets/images/plus-solid.svg) !important;
+    transform: rotateX("180deg") !important;
+    transition: all 300ms linear !important;
+}
+
+.a-btn-2:not(.collapsed)::after {
+    background-image: url(/assets/images/minus-solid.svg) !important;
+}
+
 
 .section-1 .main-heading {
     font-size: 48px;
@@ -213,9 +224,10 @@
 
 
 /*=====================================================================================*/
-.sec-3 button{
+.sec-3 button {
     padding-left: 59px;
 }
+
 .bg-img-sec-3 {
     background-image: url(/assets/images/Group\ 34677.png);
     background-repeat: no-repeat;
